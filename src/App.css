@@ -1,0 +1,247 @@
+.App-logo{
+  width: 100px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 15px;
+  border-bottom: 1px solid rgb(112, 111, 111);
+}
+
+/* header button styles */
+
+.home-icons-container {
+  padding: 5px 5px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+.home-icons-container > div {
+ padding: 0px 15px
+}
+
+.btn1{
+  all: initial;
+  padding:0px 10px; 
+  cursor: pointer; 
+  display: flex;
+  font-weight: 400;
+}
+
+.btn1> img{
+  padding: 0px 5px;
+  width: 17px;
+}
+.btn1 span{
+  font-size: 14px;
+}
+
+
+
+/* ********************************************** */
+/* main component */
+.container {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.right-section {
+  flex: 14; /* Adjust width ratio as needed */
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* ********************************************************* */
+/* right section part  */
+.right-section {
+  position: relative; /* Ensure proper positioning of child elements */
+  background-image: url('https://impiousdigest.com/wp-content/uploads/simple-one-color-grey-background-1920x12002.jpg'); /* Add background image URL */
+  background-size: cover; /* Ensure background image covers the entire section */
+  background-position: center; /* Center the background image */
+  height:94vh; /* Adjust height as needed */
+}
+
+.content {
+  position: relative; /* Position content absolutely within the right section */
+  top: 50%; /* Position content vertically centered */
+  left: 50%; /* Position content horizontally centered */
+  transform: translate(-50%, -50%); 
+  width: 50vh;
+}
+
+
+.left-container{
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+h3 {
+  margin: 2px 0px;
+  letter-spacing: 2.5px;
+  font-family: monospace;
+  font-size: 20px;
+  
+}
+
+.description{
+  font-size: 10px;
+}
+
+.reviews-container{
+  margin: 10px 0px;
+}
+
+
+/* ************************************************** */
+/* review butttons styels */
+.review-icon-container{
+  display: flex;
+}
+.review-icon{
+  padding-right: 15px;
+  text-align: center;
+}
+.btn2{
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  align-items: center;
+}
+.btn2>img{
+  width: 25px;
+  padding: 2px;
+}
+.review-icon>h5{
+  padding: 2px;
+  margin: 1px;
+}
+
+.about-img{
+  margin: 0px 0px;
+  padding: 2px 0px;
+}
+.about-img>p{
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.read-more-btn{
+  all: initial;
+  display: flex;
+  align-items: center;
+  
+  cursor: pointer;
+}
+.read-more-btn > img{
+  width: 20px;
+  padding-right: 10px;
+  filter: invert(82%) sepia(47%) saturate(4586%) hue-rotate(360deg) brightness(103%) contrast(96%);
+}
+.read-more-btn > span{
+  -webkit-background-clip: text; 
+  background-clip: text; 
+  font-size: 14px;
+  filter: invert(82%) sepia(47%) saturate(4586%) hue-rotate(360deg) brightness(103%) contrast(96%);
+}
+
+
+.toggle-btn{
+  border: 0cap;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+}
+
+.toggle-btn img{
+  width: 25px;
+  filter: invert(82%) sepia(47%) saturate(4586%) hue-rotate(360deg) brightness(103%) contrast(96%);
+}
+
+
+
+
+
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+  /* main component */
+.container {
+  display: flex;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.right-section {
+  flex: 6;
+  /* width: 200px;  */
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* ********************************************************* */
+/* right section part  */
+.right-section {
+  position: relative; /* Ensure proper positioning of child elements */
+  background-image: url('https://impiousdigest.com/wp-content/uploads/simple-one-color-grey-background-1920x12002.jpg'); /* Add background image URL */
+  background-size: cover; /* Ensure background image covers the entire section */
+  background-position: center; /* Center the background image */
+  height:100vh; 
+}
+
+.content {
+  position: relative; /* Position content absolutely within the right section */
+  top: 50%; /* Position content vertically centered */
+  left: 50%; /* Position content horizontally centered */
+  transform: translate(-50%, -50%); 
+  width: 20vh;
+}
+
+
+.left-container{
+  margin: 10px 0px;
+  padding: 10px 0px;
+}
+
+  .btn1{
+    all: initial;
+    padding:0px 0px; 
+    cursor: pointer; 
+    display: flex;
+    font-weight: 300;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 2px;
+    border-bottom: 1px solid rgb(112, 111, 111);
+  }
+
+
+  .App-logo{
+    width: 50px;
+  }
+  
+}
